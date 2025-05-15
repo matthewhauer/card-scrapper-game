@@ -1,0 +1,13 @@
+gameplay loop
+* before an encounter, player has a Character card and equipment selected -- one weapon, one armor.
+ - more than one Character may be selected.
+* encounter: an opponent Character set (animals, mutants, characters) show up with a simulated deck under the hood that
+represents actions the opponents can take
+* round: each player draws a card, plays an action card.  ie attack, hide, dodge, aim, 'use item'.
+
+Milestone one:
+* Player: has 1:M Fighters, deck, active effects
+* Fighter: has health, equipment
+* Equipment: armor or item, has permanent effects, triggers with playing Action Cards
+* ActionCard/Deck: sequence of Flyweights.
+* ACImpl: changes a Fighter's health, or adds an effect to some equipment or a Fighter.
