@@ -110,10 +110,10 @@ public:
     void printStats() {
         // todo: print stats
         cout << "Player:   " << thePlayer->getName() << " -- " <<
-           (thePlayer->isDefeated() ? "VICTORIOUS" : "DEFEATED") << endl;
+           (!thePlayer->isDefeated() ? "VICTORIOUS" : "DEFEATED") << endl;
         for(auto op : opposition){
             cout << "Opponent:   " << op->getName() << " -- " <<
-                 (op->isDefeated() ? "VICTORIOUS" : "DEFEATED") << endl;
+                 (!op->isDefeated() ? "VICTORIOUS" : "DEFEATED") << endl;
         }
     }
 
